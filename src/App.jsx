@@ -6,7 +6,7 @@ function App() {
       <Box minH="100vh" w="100vw" backgroundColor="#406254">
         <Box w={{ lg: 1240 }} mx="auto" minH="100vh" padding={4}>
           <Flex gap={4} mb={{base: 5, lg: 0}}>
-            <Image src="/src/assets/logo.svg" width={10} />
+            <Image src="/assets/logo.svg" width={10} />
             <Text color="white" alignSelf="center" fontWeight='bold'>
               ECOBUDDi
             </Text>
@@ -42,9 +42,9 @@ function App() {
               </Flex>
             </Box>
             <Box position='relative' overflow={{base: "hidden", lg: "visible"}}>
-              <Image src="/src/assets/Polygon 5.svg" position='absolute' left={{base: "80%",lg:'20%'}} top={{base: 20,lg:-10}}/>
-              <Image src="/src/assets/Polygon 9.svg" position='absolute' top={{lg:200}} right={0} display={{base:"none", lg:"block"}}/>
-              <Image src="/src/assets/hero_img.png" />
+              <Image src="assets/Polygon 5.svg" position='absolute' left={{base: "80%",lg:'20%'}} top={{base: 20,lg:-10}}/>
+              <Image src="assets/Polygon 9.svg" position='absolute' top={{lg:200}} right={0} display={{base:"none", lg:"block"}}/>
+              <Image src="assets/hero_img.png" />
             </Box>
           </Flex>
         </Box>
