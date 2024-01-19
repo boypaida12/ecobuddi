@@ -67,7 +67,7 @@ function App() {
                   w="fit-content"
                   _hover={{ bgColor: "#F94D1C" }}
                   as="a"
-                  href="https://whatsapp.com/channel/0029VaKkHJv5kg75Lci8qg34"
+                  href="https://chat.whatsapp.com/EJnR8NzIFdw4CcMx4PX0Qo"
                   target="_blank"
                   leftIcon={<FaWhatsapp />}
                   size="lg"
