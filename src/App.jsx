@@ -47,17 +47,17 @@ function App() {
                 </Heading>
                 <Heading
                   color="white"
-                  fontSize={28}
+                  fontSize={{base: 44, lg: 36}}
                   fontWeight="bold"
-                  letterSpacing={8}
+                  letterSpacing={12}
                 >
                   TURN CLUTTER INTO CASH
                 </Heading>
                 <Text color="white" fontSize={16} letterSpacing={1}>
                   Ecobuddi helps you earn money by selling your used and
-                  unwanted goods or partner with us and donate to our platform.
+                  unwanted goods. Partner with us and donate on our platform.
                 </Text>
-                <Text color="#EFB343" fontSize={16}>
+                <Text color="#EFB343" fontSize={16} fontWeight='bold'>
                   51 people currently signed up
                 </Text>
                 <Button
