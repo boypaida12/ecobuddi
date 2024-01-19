@@ -1,27 +1,60 @@
-import { Box, Image, Text, Flex, Button } from "@chakra-ui/react";
+import { Box, Image, Text, Flex, Button, Heading } from "@chakra-ui/react";
+import { FaWhatsapp } from "react-icons/fa";
 
 function App() {
   return (
     <>
-      <Box minH="100vh" w="100vw" backgroundColor="#406254">
+      <Box minH="100vh" backgroundColor="#406254" overflowX="hidden">
+        <Box position='relative'>
+          <Image
+            src="assets/Polygon 9.svg"
+            position="absolute"
+            top={144}
+            left={-56}
+            opacity={0.7}
+            // display={{ base: "none", lg: "block" }}
+          />
+        </Box>
         <Box w={{ lg: 1240 }} mx="auto" minH="100vh" padding={4}>
-          <Flex gap={4} mb={{base: 5, lg: 0}}>
+          <Flex gap={4} mb={{ base: 5, lg: 0 }}>
             <Image src="/assets/logo.svg" width={10} />
-            <Text color="white" alignSelf="center" fontWeight='bold'>
+            <Text
+              color="white"
+              alignSelf="center"
+              fontWeight="bold"
+              fontSize={24}
+            >
               ECOBUDDi
             </Text>
           </Flex>
-          <Flex gap={{base:12, lg: 8}} minH="80vh" justifyContent="center" alignItems="center" flexDir={{base: 'column', md: 'row'}}>
-            <Box w={{lg: "50%"}}>
+          <Flex
+            gap={{ base: 12, lg: 8 }}
+            minH="80vh"
+            // overflow='hidden'
+            justifyContent="center"
+            alignItems="center"
+            flexDir={{ base: "column", md: "row" }}
+          >
+            <Box w={{ lg: "55%" }}>
               <Flex flexDir="column" gap={4}>
-                <Text color="#FF8E27" fontSize={56} fontWeight='bold'>
+                <Heading
+                  color="#FF8E27"
+                  fontSize={72}
+                  fontWeight={700}
+                  letterSpacing={{ base: 8, lg: 12 }}
+                >
                   {"IT'S"} <br />
                   TIME TO
-                </Text>
-                <Text color="white" fontSize={28} fontWeight='bold'>
+                </Heading>
+                <Heading
+                  color="white"
+                  fontSize={28}
+                  fontWeight="bold"
+                  letterSpacing={8}
+                >
                   TURN CLUTTER INTO CASH
-                </Text>
-                <Text color="white" fontSize={20}>
+                </Heading>
+                <Text color="white" fontSize={16} letterSpacing={1}>
                   Ecobuddi helps you earn money by selling your used and
                   unwanted goods or partner with us and donate to our platform.
                 </Text>
@@ -33,17 +66,34 @@ function App() {
                   color="white"
                   w="fit-content"
                   _hover={{ bgColor: "#F94D1C" }}
-                  as='a'
+                  as="a"
                   href="https://whatsapp.com/channel/0029VaKkHJv5kg75Lci8qg34"
                   target="_blank"
+                  leftIcon={<FaWhatsapp />}
+                  size="lg"
                 >
                   Join Community
                 </Button>
               </Flex>
             </Box>
-            <Box position='relative' overflow={{base: "hidden", lg: "visible"}}>
-              <Image src="assets/Polygon 5.svg" position='absolute' left={{base: "80%",lg:'20%'}} top={{base: 20,lg:-10}}/>
-              <Image src="assets/Polygon 9.svg" position='absolute' top={{lg:200}} right={0} display={{base:"none", lg:"block"}}/>
+            <Box
+              position="relative"
+              // overflow={{ base: "hidden", lg: "visible" }}
+              // order={-1}
+            >
+              <Image
+                src="assets/Polygon 5.svg"
+                position="absolute"
+                left={{ base: "85%", lg: "20%" }}
+                top={{ base: "-25%", lg: -10 }}
+              />
+              <Image
+                src="assets/Polygon 9.svg"
+                position="absolute"
+                top={{ lg: 144 }}
+                right={-144}
+                display={{ base: "none", lg: "block" }}
+              />
               <Image src="assets/hero_img.png" />
             </Box>
           </Flex>
